@@ -2,7 +2,7 @@
 
 var mongoose = require('mongoose');
 var app = require('./app.js')
-var port = 3977;
+var port = process.env.PORT || 3977;
 
 mongoose.connect('mongodb://admin:admin@ds249079.mlab.com:49079/twitter', (err, res) => {
     if(err){

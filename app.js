@@ -23,4 +23,5 @@ var swaggerUi = require('swagger-ui-express'),
 //Definimos un end point para la documentacion de la API
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
  //para verlo http://localhost:3977/api-docs/
+ 
 module.exports = app;
